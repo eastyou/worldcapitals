@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>国家与首都配对练习</title>
+<style>
+:root {
+  --ink: #1f2933;
+  --muted: #52606d;
+  --line: #cbd2d9;
+  --accent: #0b5f8a;
+  --paper: #ffffff;
+  --tint: #f5f7fa;
+}
+* { box-sizing: border-box; }
+html { font-size: 11pt; }
+body {
+  margin: 0;
+  padding: 18px;
+  color: var(--ink);
+  background: var(--tint);
+  font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+  line-height: 1.55;
+}
+.sheet {
+  max-width: 190mm;
+  margin: 0 auto;
+  padding: 14mm;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+header { margin-bottom: 8mm; border-bottom: 2px solid var(--accent); padding-bottom: 4mm; }
+h1 { margin: 0 0 2mm; font-size: 20pt; letter-spacing: 1px; }
+h2 { margin: 6mm 0 2mm; font-size: 13pt; color: var(--accent); }
+p { margin: 1mm 0; }
+.hint { color: var(--muted); font-size: 9.5pt; }
+.empty { padding: 8mm; text-align: center; color: var(--muted); }
+.quiz { display: block; }
+.question {
+  padding: 3mm 0;
+  border-bottom: 1px dashed var(--line);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.question:last-child { border-bottom: none; }
+.q { font-weight: 600; margin-bottom: 2mm; }
+.no { display: inline-block; min-width: 8mm; color: var(--accent); }
+.options { list-style: none; margin: 0; padding: 0 0 0 8mm; }
+.options li { padding: 1mm 0; }
+.letter {
+  display: inline-block;
+  width: 6mm;
+  height: 6mm;
+  margin-right: 2mm;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 6mm;
+  font-size: 8.5pt;
+  color: var(--accent);
+}
+.answers { margin-top: 6mm; padding-top: 4mm; border-top: 2px solid var(--accent); }
+.answers ol { margin: 0; padding-left: 8mm; }
+.match-grid { display: flex; gap: 8mm; align-items: flex-start; }
+.match-grid > div { flex: 1 1 0; min-width: 0; }
+.match-grid ol { margin: 0; padding-left: 0; list-style: none; }
+.match-grid li {
+  padding: 1.6mm 0;
+  border-bottom: 1px dotted var(--line);
+  break-inside: avoid;
+}
+table { width: 100%; border-collapse: collapse; font-size: 10pt; }
+th, td { border: 1px solid var(--line); padding: 1.6mm 2mm; text-align: left; }
+th { background: var(--tint); font-weight: 600; }
+tbody tr:nth-child(even) { background: #fbfcfd; }
+@page { size: A4; margin: 14mm; }
+@media print {
+  body { background: #ffffff; padding: 0; font-size: 10.5pt; }
+  .sheet { max-width: none; margin: 0; padding: 0; border: none; border-radius: 0; }
+  .no-print { display: none !important; }
+  h1 { font-size: 18pt; }
+  table { page-break-inside: auto; }
+  tr, .question, .match-grid li { break-inside: avoid; page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<main class="sheet">
+<header>
+<h1>国家与首都配对练习</h1>
+<p class="hint">共 8 组 · 一一对应</p>
+</header>
+<p class="hint">把右侧首都的字母写在左侧国家后的括号内。</p>
+<div class="match-grid">
+<div>
+<h2>国家</h2>
+<ol>
+<li><span class="no">1.</span>埃及</li>
+<li><span class="no">2.</span>法国</li>
+<li><span class="no">3.</span>瑞士</li>
+<li><span class="no">4.</span>乌拉圭</li>
+<li><span class="no">5.</span>坦桑尼亚</li>
+<li><span class="no">6.</span>萨摩亚</li>
+<li><span class="no">7.</span>赞比亚</li>
+<li><span class="no">8.</span>加纳</li>
+</ol>
+</div>
+<div>
+<h2>首都</h2>
+<ol>
+<li><span class="letter">A</span>阿克拉</li>
+<li><span class="letter">B</span>卢萨卡</li>
+<li><span class="letter">C</span>阿皮亚</li>
+<li><span class="letter">D</span>多多马</li>
+<li><span class="letter">E</span>蒙得维的亚</li>
+<li><span class="letter">F</span>伯尔尼</li>
+<li><span class="letter">G</span>巴黎</li>
+<li><span class="letter">H</span>开罗</li>
+</ol>
+</div>
+</div>
+</main>
+</body>
+</html>

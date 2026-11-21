@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>世界首都练习题</title>
+<style>
+:root {
+  --ink: #1f2933;
+  --muted: #52606d;
+  --line: #cbd2d9;
+  --accent: #0b5f8a;
+  --paper: #ffffff;
+  --tint: #f5f7fa;
+}
+* { box-sizing: border-box; }
+html { font-size: 11pt; }
+body {
+  margin: 0;
+  padding: 18px;
+  color: var(--ink);
+  background: var(--tint);
+  font-family: "Noto Sans SC", "PingFang SC", "Hiragino Sans GB",
+    "Microsoft YaHei", "Source Han Sans SC", sans-serif;
+  line-height: 1.55;
+}
+.sheet {
+  max-width: 190mm;
+  margin: 0 auto;
+  padding: 14mm;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+}
+header { margin-bottom: 8mm; border-bottom: 2px solid var(--accent); padding-bottom: 4mm; }
+h1 { margin: 0 0 2mm; font-size: 20pt; letter-spacing: 1px; }
+h2 { margin: 6mm 0 2mm; font-size: 13pt; color: var(--accent); }
+p { margin: 1mm 0; }
+.hint { color: var(--muted); font-size: 9.5pt; }
+.empty { padding: 8mm; text-align: center; color: var(--muted); }
+.quiz { display: block; }
+.question {
+  padding: 3mm 0;
+  border-bottom: 1px dashed var(--line);
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+.question:last-child { border-bottom: none; }
+.q { font-weight: 600; margin-bottom: 2mm; }
+.no { display: inline-block; min-width: 8mm; color: var(--accent); }
+.options { list-style: none; margin: 0; padding: 0 0 0 8mm; }
+.options li { padding: 1mm 0; }
+.letter {
+  display: inline-block;
+  width: 6mm;
+  height: 6mm;
+  margin-right: 2mm;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 6mm;
+  font-size: 8.5pt;
+  color: var(--accent);
+}
+.answers { margin-top: 6mm; padding-top: 4mm; border-top: 2px solid var(--accent); }
+.answers ol { margin: 0; padding-left: 8mm; }
+.match-grid { display: flex; gap: 8mm; align-items: flex-start; }
+.match-grid > div { flex: 1 1 0; min-width: 0; }
+.match-grid ol { margin: 0; padding-left: 0; list-style: none; }
+.match-grid li {
+  padding: 1.6mm 0;
+  border-bottom: 1px dotted var(--line);
+  break-inside: avoid;
+}
+table { width: 100%; border-collapse: collapse; font-size: 10pt; }
+th, td { border: 1px solid var(--line); padding: 1.6mm 2mm; text-align: left; }
+th { background: var(--tint); font-weight: 600; }
+tbody tr:nth-child(even) { background: #fbfcfd; }
+@page { size: A4; margin: 14mm; }
+@media print {
+  body { background: #ffffff; padding: 0; font-size: 10.5pt; }
+  .sheet { max-width: none; margin: 0; padding: 0; border: none; border-radius: 0; }
+  .no-print { display: none !important; }
+  h1 { font-size: 18pt; }
+  table { page-break-inside: auto; }
+  tr, .question, .match-grid li { break-inside: avoid; page-break-inside: avoid; }
+}
+</style>
+</head>
+<body>
+<main class="sheet">
+<header>
+<h1>世界首都练习题</h1>
+<p class="hint">共 10 题 · 每题只有一个正确答案</p>
+</header>
+<div class="quiz">
+<section class="question">
+<p class="q"><span class="no">1.</span>尼日利亚的首都是？</p>
+<ol class="options">
+<li><span class="letter">A</span>阿布贾</li>
+<li><span class="letter">B</span>阿克拉</li>
+<li><span class="letter">C</span>阿尔及尔</li>
+<li><span class="letter">D</span>突尼斯</li>
+</ol>
+</section>
+<section class="question">
+<p class="q"><span class="no">2.</span>古巴的首都是？</p>
+<ol class="options">
+<li><span class="letter">A</span>哈瓦那</li>
+<li><span class="letter">B</span>圣何塞</li>
+<li><span class="letter">C</span>巴拿马城</li>
+<li><span class="letter">D</span>渥太华</li>
+</ol>
+</section>
+<section class="question">
+<p class="q"><span class="no">3.</span>多米尼加的首都是？</p>
+<ol class="options">
+<li><span class="letter">A</span>危地马拉城</li>
+<li><span class="letter">B</span>圣多明各</li>
+<li><span class="letter">C</span>渥太华</li>
+<li><span class="letter">D</span>金斯敦</li>
+</ol>
+</section>
+<section class="question">
+<p class="q"><span class="no">4.</span>墨西哥的首都是？</p>
+<ol class="options">
+<li><span class="letter">A</span>特古西加尔巴</li>
+<li><span class="letter">B</span>金斯敦</li>
+<li><span class="letter">C</span>渥太华</li>
+<li><span class="letter">D</span>墨西哥城</li>
+</ol>
+</section>
+<section class="question">
+<p class="q"><span class="no">5.</span>澳大利亚的首都是？</p>
+<ol class="options">
+<li><span class="letter">A</span>苏瓦</li>
+<li><span class="letter">B</span>堪培拉</li>
+<li><span class="letter">C</span>阿皮亚</li>
+<li><span class="letter">D</span>惠灵顿</li>
+</ol>
+</section>
+<section class="question">
+<p class="q"><span class="no">6.</span>阿根廷的首都是？</p>
+<ol class="options">
+<li><span class="letter">A</span>圣地亚哥</li>
+<li><span class="letter">B</span>巴西利亚</li>
+<li><span class="letter">C</span>布宜诺斯艾利斯</li>
+<li><span class="letter">D</span>蒙得维的亚</li>
+</ol>
+</section>
+<section class="question">
+<p class="q"><span class="no">7.</span>巴拿马的首都是？</p>
+<ol class="options">
+<li><span class="letter">A</span>墨西哥城</li>
+<li><span class="letter">B</span>危地马拉城</li>
+<li><span class="letter">C</span>哈瓦那</li>
+<li><span class="letter">D</span>巴拿马城</li>
+</ol>
+</section>
+<section class="question">
+<p class="q"><span class="no">8.</span>塞内加尔的首都是？</p>
+<ol class="options">
+<li><span class="letter">A</span>开罗</li>
+<li><span class="letter">B</span>突尼斯</li>
+<li><span class="letter">C</span>坎帕拉</li>
+<li><span class="letter">D</span>达喀尔</li>
+</ol>
+</section>
+<section class="question">
+<p class="q"><span class="no">9.</span>埃塞俄比亚的首都是？</p>
+<ol class="options">
+<li><span class="letter">A</span>突尼斯</li>
+<li><span class="letter">B</span>多多马</li>
+<li><span class="letter">C</span>阿布贾</li>
+<li><span class="letter">D</span>亚的斯亚贝巴</li>
+</ol>
+</section>
+<section class="question">
+<p class="q"><span class="no">10.</span>日本的首都是？</p>
+<ol class="options">
+<li><span class="letter">A</span>乌兰巴托</li>
+<li><span class="letter">B</span>东京</li>
+<li><span class="letter">C</span>新德里</li>
+<li><span class="letter">D</span>雅加达</li>
+</ol>
+</section>
+</div>
+</main>
+</body>
+</html>
